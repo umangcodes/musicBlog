@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/navigation/Header";
+import { useState } from "react";
 function App() {
+  const [headerLinks, setHeaderLinks] = useState([
+    { id: 1, name: "Home", url: "/" },
+    { id: 2, name: "Contact", url: "/contact-us" },
+    { id: 3, name: "About", url: "/about" },
+    { id: 4, name: "Store", url: "/store" },
+  ]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header links={headerLinks}></Header>
     </div>
   );
 }
