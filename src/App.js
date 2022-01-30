@@ -3,6 +3,7 @@ import Header from "./components/navigation/Header";
 import { useState } from "react";
 import Home from "./pages/Home";
 import Footer from "./components/navigation/Footer";
+import Services from "./pages/Services";
 function App() {
   const [headerLinks, setHeaderLinks] = useState([
     { id: 1, name: "Home", url: "/" },
@@ -12,8 +13,9 @@ function App() {
   ]);
   return (
     <div className="bg-red-400">
-      <Header links={headerLinks}></Header>
+      <Header links={headerLinks} />
       <Home />
+      <Services />
       <Footer />
     </div>
   );

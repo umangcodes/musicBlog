@@ -1,0 +1,7 @@
+card
+{
+    cardTitle: "string",
+    cardTitleImg: "url",
+    cardDesc: "string",
+    subscriptionType: "string",
+}
