@@ -6,7 +6,7 @@ function Header(props) {
     </div>
   ));
   return (
-    <div className="sticky top-5 z-10 bg-opacity-80 grid lg:grid-cols-3 grid-cols-2 my-5 mx-5">
+    <div className="sticky top-0 z-10 bg-white bg-opacity-90 grid lg:grid-cols-3 grid-cols-2 py-5 pb-5 px-5">
       <div className="col-start-1 flex lg:px-10 px-5 lg:text-2xl text-xl">
         SM
       </div>
