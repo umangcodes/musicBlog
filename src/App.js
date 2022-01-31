@@ -12,7 +12,7 @@ function App() {
     { id: 4, name: "Store", url: "/store" },
   ]);
   return (
-    <div className="bg-red-400">
+    <div className="">
       <Header links={headerLinks} />
       <Home />
       <Services />
